@@ -3,7 +3,7 @@ Files and instructions on how to edit SmartSense Motion Sensor to show temperatu
 
 ###### Way 1:
 Create new Device Handler at [SmartThings IDE](https://graph.api.smartthings.com/).  
-Copy all the code from [here](/devicehandler.txt) to the device handler and you are good to go.
+Copy all the code from [here](/devicehandler.groovy) to the device handler and you are good to go.
 
 ###### Way 2:
 Create new Device Handler using the SmartSense Motion Sensor template.  
@@ -16,5 +16,5 @@ Edit the .json file to match [input.json](/input.json) and run:
 ```
 smartthings presentation:device-config:create --input=presentation.json
 ```
-Then copy the mnmn and vid fields to your device handler metadata definition field. [Example here.](/devicehandler.txt)  
+Then copy the mnmn and vid fields to your device handler metadata definition field. [Example here.](/devicehandler.groovy)  
 Also add ocfDeviceType: "oic.d.thermostat" to change the icon to thermostat.
